@@ -1,0 +1,132 @@
+@import url('./style.css');
+
+.indexations h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #16a085;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.indexations ul {
+    width: 90%;
+    margin: auto;
+}
+.indexations-liste {
+    display: block;
+    min-height: 2em;
+    width: 41%;
+    float: left;
+    margin-right: 10%;
+    line-height: 2;
+    background-color: #fff;
+    color: #16a085;
+    border-bottom: 1px dotted #16a085;
+    padding: .5em 2%;
+    font-size: 1.2em;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.indexations li:nth-child(even) .indexations-liste {
+    margin-right: auto;
+}
+.indexations li:last-child .indexations-liste {
+    margin-bottom: 2em;
+    border-bottom: none;
+}
+.indexations-liste:hover {
+    padding-left: 5%;
+    width: 38%;
+    text-decoration: underline;
+}
+
+/* Page de pagination: les numéros de page */
+.paginateNumberBox {
+    margin-top: 3em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.paginateNumber {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5em;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.paginateNumber:hover {
+    color: #16a085;
+    border-color: #16a085;
+}
+
+/* page RESULT.PHP */
+.result {
+    border-bottom: 1px dotted black;
+}
+.results {
+    padding-top: 1em;
+    background-color: #fff;
+}
+.results h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-align: center;
+}
+.search-result h4.nothing {
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+}
+.result:last-child {
+    border-bottom: none;
+}
+.result div {
+    padding: 20px;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.result-img img {
+    float: left;
+    max-height: 150px;
+    margin-right: 20px;
+}
+.result-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.result-author {
+    font-style: italic;
+}
+
+@media screen and (max-width: 769px) {
+    .indexations ul {
+        width: auto;
+    }
+    .indexations-liste {
+        width: auto;
+        float: none;
+        margin-right: auto;
+        padding-left: 5%;
+    }
+    .indexations-liste:hover {
+        width: auto;
+    }
+
+
+    .result {
+        padding: 20px;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+}

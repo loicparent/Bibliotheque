@@ -1,0 +1,288 @@
+@import url('./style.css');
+section {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 4em;
+}
+
+ /* The animation code */
+    @keyframes title {
+        0% {
+        	padding-left: 20% ;
+   		}
+        100% {
+        	padding-left: 0%; ;
+   		}
+   	}
+
+section h2 {
+	font-size: 2em;
+	text-align: left;
+	color: #16a085;
+	border-bottom: 1px solid #16a085;
+	margin-bottom: 1em;
+	animation-name: title;
+    animation-duration: 0.5s;
+}
+.addBook h3, .favourite h3 {
+	animation: none;
+    border-bottom: none;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: black;
+}
+.addBook {
+	width: 65%;
+	margin-right: 5%;
+	float: left;
+	margin-bottom: 2em;
+}
+.othersFunctions {
+	width: 30%;
+	float: left;
+}
+
+.othersFunctions a {
+	display: block;
+	background-color: #16a085;
+	color: #fff;
+	height: 1.5em;
+	padding: 0.5em 0 0.5em 5%;
+	margin-bottom: 0.5em;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+.othersFunctions a:hover {
+	padding-left: 10%;
+	text-decoration: underline;
+}
+
+/* Partie formulaire */
+input, textarea, label, select {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	margin: auto;
+	padding: auto;
+}
+input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+	margin-right: 10%;
+}
+textarea {
+	margin-bottom: 2em;
+}
+label.radio, label.checkbox {
+	display: inline-block;
+	width: auto;	
+	margin-top: 0;
+}
+label {
+	margin-top: 1em;
+}
+p.warning {
+	color: red;
+	font-size: 1.3em;
+	text-align: center;
+	border: 1px solid red;
+	padding: 1em;
+	position: relative;
+}
+/* The animation code */
+@keyframes error {
+    0% {-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+    50% {-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);}
+    1000% {-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+}
+p.warning span {
+	color: white;
+	font-size: 1.3em;
+	line-height: 2;
+	padding-right: 5px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 30px 50px 30px;
+	border-color: transparent transparent red transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: -30px;
+	margin-top: -20px;
+	animation-name: error;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+/* Partie  favorit  => view_users */
+.userBooksList li {
+	padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 5em;
+}
+.favourite-list-image img {
+	max-height: 300px;
+}
+.favourite-sideInfo {
+	padding-top: 4.5em;
+	float: right;
+	width: 50%;
+}
+.favourite-list-author {
+	font-style: italic;
+	display: block;
+}
+.favourite-list-remove {
+	display: inline-block;
+	padding: 1em;
+	margin-top: 1em;
+	color: #fff;
+	text-align: center;
+	margin-left: -1em;
+	background-color: #16a085;
+}
+.userBooksList h4 {
+	font-size: 1.5em;
+}
+
+/* Page ad_users */
+.user-item { /* main contener */
+	position: relative;
+	margin-top: 2em;
+}
+.user-item-list { /* main contener */
+	margin-bottom: 1em;
+	border-bottom: 1px dotted black;
+	padding: 1em 2%;
+	padding-bottom: 2em;
+}
+.user-item-list:last-child {
+	border-bottom: 1px dotted black;
+}
+.user-item-name {
+	font-size: 1.2em;
+	font-weight: bold;
+	display: inline;
+}
+.user-item-admin {
+	display: inline-block;
+	padding: 5px;
+	position: absolute;
+	right: 25%;
+	background-color: #fff;
+	border-radius: .2em;
+}
+.user-item-user {
+	display: inline-block;
+	padding: 5px;
+	position: absolute;
+	right: 25%;
+	background-color: #fff;
+	border-radius: .2em;
+}
+.user-item-delete {
+	display: inline-block;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	background-color: red;
+	border-radius: .2em;
+}
+.user-item-link:hover {
+	text-decoration: underline;
+}
+
+/* changer image - edit_books */
+.sticker {
+	display: inline-block;
+	border: 1px solid black;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+}
+.sticker img {
+	max-height: 200px;
+}
+.sticker img:hover {
+	opacity: 0.8;
+}
+.sticker .changeImg {
+	display: block;
+	margin-top: 1em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 769px) {
+	.addBook {
+	width: 100%;
+	margin-right: auto;
+	margin-bottom: 3em;
+	float: none;
+	}
+	.othersFunctions {
+		width: 100%;
+		float: none;
+	}
+
+
+	.userBooksList {
+		padding: 5%;
+	    max-width: 100%;
+	}
+	.favourite-sideInfo {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.favourite-sideInfo {
+		padding-top: 2em;
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	.favourite-list-remove {
+		display: block;
+		margin-left: auto;
+	}
+	.userBooksList .favourite-list-image img {
+		display: block;
+		margin: auto;
+	}
+
+
+	/* Page ad_users */
+	.user-item-admin {
+		display: block;
+		position: static;
+		margin-top: 0.5em;
+	}
+	.user-item-user {
+		display: block;
+		position: static;
+		margin-top: 0.5em;
+	}
+	.user-item-delete {
+		display: block;
+		position: static;
+		margin-top: 0.5em;
+	}
+
+}
