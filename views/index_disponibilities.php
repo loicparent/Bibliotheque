@@ -23,7 +23,7 @@
             $dispos = $data['dispo'];
             foreach ($dispos as $dispo) : ?>
             <li>
-                <a href="./index.php?a=view&e=authors&id=<?php echo $dispo -> id; ?>" class="indexations-liste"><?php echo $dispo -> title ?></a>
+                <a href="./index.php?a=view&e=books&id=<?php echo $dispo -> id; ?>" class="indexations-liste"><?php echo $dispo -> title ?></a>
             </li>
             <?php endforeach; ?>
         </ul>
