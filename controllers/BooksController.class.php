@@ -21,7 +21,7 @@
 			//Compter le nbre de livre
 			$totalBooks = $this->booksModel->count();
 			//on défini le nbre de livre 
-			$perPage = 5;
+			$perPage = 6;
 			$start = Paginate::getStart( $perPage, $totalBooks );
 			$data['books'] = $this -> booksModel -> getRecent( $start, $perPage );
 			$data['view'] = 'index_allBooks.php';

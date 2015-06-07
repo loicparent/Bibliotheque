@@ -3,7 +3,7 @@
     <article class="addBook">
         <h3>Ajouter un livre</h3>
         <?php if (isset ($_GET['error'])): ?>
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         <?php endif ?>
         <form action="index.php?a=create&e=books" method="post" enctype="multipart/form-data">
             <label for="title">Titre&nbsp;:</label>
@@ -44,7 +44,7 @@
             <input type="number" name="length" id="length" placeholder="indiquez le nombre de page du livre">
 
             <label for="year">année&nbsp;:</label>
-            <input type="number" name="year" id="year" placeholder="indiquez l'année de sortie du livre" step="10" value="1970">
+            <input type="number" name="year" id="year" placeholder="indiquez l'année de sortie du livre" value="1970">
 
             <label>disponibilité&nbsp;:</label>
             <label class="radio" for="available">Oui&nbsp;:</label>

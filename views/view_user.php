@@ -1,5 +1,5 @@
 <section>
-    <h2>Bienvenue cher <?= $_SESSION['user']; ?> dans votre compte</h2>
+    <h2>Bienvenue cher <span class="nomUtilisateur"><?= $_SESSION['user']; ?></span> dans votre compte</h2>
     <article class="favourite">
         <h3>Mes favoris</h3>
         <ul class="userBooksList">

@@ -6,10 +6,10 @@
 
         <div class="recherche">
             <?php if( isset( $_GET['error'] ) && $_GET['error'] == 1 ): ?>
-                <p class="warning"><span>!</span>ATTENTION: Pour effectuer une recherche, vous devez compléter le champ de recherche.</p>
+                <p class="warning"><span>!</span>ATTENTION&nbsp;: Pour effectuer une recherche, vous devez compléter le champ de recherche.</p>
             <?php endif; ?>
             <?php if( isset( $_GET['error'] ) && $_GET['error'] == 2 ): ?>
-                <p class="warning"><span>!</span>ATTENTION: Vous devez entrer au moins trois caractères.</p>
+                <p class="warning"><span>!</span>ATTENTION&nbsp;: Vous devez entrer au moins trois caractères.</p>
             <?php endif; ?>
             <form action="index.php?a=search&e=pages" method="post">
                 <label for="main-search">

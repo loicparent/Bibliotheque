@@ -4,7 +4,7 @@
     <h2>Modifier le livre <?= $book -> title; ?></h2>
     <article class="addBook">
         <?php if (isset ($_GET['error'])): ?>
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         <?php endif ?>
         <form action="index.php?a=change&e=books" method="post" enctype="multipart/form-data">
 
@@ -65,7 +65,7 @@
             <input type="number" name="length" id="length" placeholder="indiquez le nombre de page du livre" value="<?= $book -> length; ?>">
 
             <label for="year">année&nbsp;:</label>
-            <input type="number" name="year" id="year" placeholder="indiquez l'année de sortie du livre" step="10" value="<?= $book -> year; ?>">
+            <input type="number" name="year" id="year" placeholder="indiquez l'année de sortie du livre" value="<?= $book -> year; ?>">
 
             <label>disponibilité&nbsp;:</label>
             <label class="radio" for="available">Oui&nbsp;:</label>

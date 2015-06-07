@@ -43,8 +43,4 @@
         <?php endif; ?>
         </div>
     </article>
-    
-    <footer class="footer">
-        
-    </footer>
 </section>

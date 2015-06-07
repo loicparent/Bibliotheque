@@ -24,7 +24,6 @@
         <div class="infosDuhaut">
             <div class="infosDuHaut gauche">
                 <img src="./img/authors/<?= $author -> img_file; ?>" alt="Photo de <?= $author -> authors_name; ?>" class="description">
-                <!-- <a href="" class="lienSite"></a>   -->
             </div>
             
             <p class="biographie">
@@ -48,8 +47,4 @@
             <?php endif; ?>
         </div>
     </article>
-    
-    <footer class="footer">
-        
-    </footer>
 </section>

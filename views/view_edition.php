@@ -24,11 +24,10 @@
         <div class="infosDuhaut">
             <div class="infosDuHaut gauche">
                 <img src="./img/editions/<?= $edition -> img_file ;?>" alt="logo édition <?= $edition -> editions_name ;?>" class="description">
-                <!-- <a href="" class="lienSite"></a>   -->
             </div>
             
             <p class="biographie">
-                édition ... depuis ... est reconnu pour ...
+                <?= $edition -> editions_description ;?>
             </p>
         </div>
         <div class="infoDuBas clearing">
@@ -50,8 +49,4 @@
         <?php endif; ?>
         </div>
     </article>
-    
-    <footer class="footer">
-        
-    </footer>
 </section>

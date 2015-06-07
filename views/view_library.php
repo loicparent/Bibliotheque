@@ -24,7 +24,6 @@
         <div class="infosDuhaut">
             <div class="infosDuHaut gauche">
                 <img src="./img/libraries/<?= $library -> img_file; ?>" alt="Photo de la bibliothèque de <?= $library -> libraries_name; ?>" class="description">
-                <!-- <a href="" class="lienSite"></a>   -->
             </div>
             
             <p class="biographie">
@@ -50,8 +49,4 @@
         <?php endif; ?>
         </div>
     </article>
-    
-    <footer class="footer">
-        
-    </footer>
 </section>

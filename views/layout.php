@@ -5,6 +5,7 @@
     <meta name="keywords" lang="fr" content="bibliothèque, livre, bouquins, bibliothèque en ligne, roman">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Loïc Parent">
+    <meta name="description" content="Travail de fin d’année en option infographie Web de la HEPL pour le cours de M. Vilain" />
     <title><?= $data['page_title']; ?></title>
     <link rel="icon" href="./img/fav.ico" />
     <link rel="stylesheet" type="text/css" href="./style/<?= $data['styleName']; ?>.css">

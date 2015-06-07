@@ -1,12 +1,12 @@
 <section>
     <?php if (isset ($_GET['error']) && $_GET['error'] == 1): ?>
         <div class="warningTop">
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         </div>
     <?php endif ?>
     <?php if (isset ($_GET['error']) && $_GET['error'] == 2): ?>
         <div class="warningTop">
-            <p class="warning"><span>!</span>ATTENTION: Vous n'avez pas entré un bon mot de passe ou nom d'utilisateur</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Vous n'avez pas entré un bon mot de passe ou nom d'utilisateur</p>
         </div>
     <?php endif ?>
     <article class="choixCompte">
@@ -27,7 +27,4 @@
             </div>
         </div>
     </article>
-    <footer class="footer">
-        
-    </footer>
 </section>

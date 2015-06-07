@@ -152,6 +152,30 @@
             }
 
              /* The animation code */
+                -webkit-@keyframes title {
+                    0% {
+                        padding-left: 20% ;
+                    }
+                    100% {
+                        padding-left: 0%; ;
+                    }
+                }
+                -o-@keyframes title {
+                    0% {
+                        padding-left: 20% ;
+                    }
+                    100% {
+                        padding-left: 0%; ;
+                    }
+                }
+                -moz-@keyframes title {
+                    0% {
+                        padding-left: 20% ;
+                    }
+                    100% {
+                        padding-left: 0%; ;
+                    }
+                }
                 @keyframes title {
                     0% {
                         padding-left: 20% ;
@@ -196,18 +220,24 @@
         /* section de recherche */
             /* The animation code */
             @keyframes error {
-                0% {-webkit-transform: scale(1);
-                -ms-transform: scale(1);
-                -o-transform: scale(1);
-                transform: scale(1);}
-                50% {-webkit-transform: scale(1.2);
-                -ms-transform: scale(1.2);
-                -o-transform: scale(1.2);
-                transform: scale(1.2);}
-                1000% {-webkit-transform: scale(1);
-                -ms-transform: scale(1);
-                -o-transform: scale(1);
-                transform: scale(1);}
+                0% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                    transform: scale(1);
+                }
+                50% {
+                    -webkit-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+                100% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                    transform: scale(1);
+                }
             }
             p.warning {
                 color: red;

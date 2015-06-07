@@ -3,7 +3,7 @@
     <h2>Modifier l’image du livre <?= $book -> title ;?></h2>
     <article class="addBook">
         <?php if (isset ($_GET['error'])): ?>
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         <?php endif ?>
         <form action="index.php?a=replaceImg&e=books&id=<?= $book -> book_id ;?>&img=<?= $book -> img_file ;?>" method="post" enctype="multipart/form-data">
 

@@ -27,8 +27,4 @@
         <?php endforeach; ?>
         </ul>
     </article>
-    
-    <footer class="footer">
-        
-    </footer>
 </section>

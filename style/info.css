@@ -14,20 +14,19 @@
 	}
 	.infoGeneral .description {
 		max-width: 90%;
-		max-height: 500px;
 		display: block;
 		margin: auto;
+		margin-bottom: 2em;
 	}
 	.infoGeneral .biographie, .infoGeneral .resume {
 		max-width: 60%;
 		margin-left: 50%;
-		/*padding-top: 20px;*/
 		padding-right: 20px;
+		margin-bottom: 2em;
 	}
 	.livres {
 		background-color: #fff;
 	}
-
 
 @media screen and (max-width: 769px) {
 	.infosDuhaut {
@@ -42,9 +41,9 @@
 	.infoGeneral .description {
 		text-align: left;
 		max-width: 90%;
-		max-height: 500px;
 		display: block;
 		margin: auto;
+		margin-bottom: 2em;
 	}
 	.infoGeneral .biographie, .infoGeneral .resume {
 			text-align: left;

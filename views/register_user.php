@@ -1,17 +1,17 @@
 <section>
     <?php if (isset ($_GET['error']) && $_GET['error'] == 1): ?>
         <div class="warningTop">
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         </div>
     <?php endif ?>
     <?php if (isset ($_GET['error']) && $_GET['error'] == 2): ?>
         <div class="warningTop">
-            <p class="warning"><span>!</span>ATTENTION: Les mots de passes entré ne sont pas identiques</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Les mots de passes entrés ne sont pas identiques</p>
         </div>
     <?php endif ?>
     <?php if (isset ($_GET['error']) && $_GET['error'] == 3): ?>
         <div class="warningTop">
-            <p class="warning"><span>!</span>ATTENTION: Le nom d'utilisateur existe déjà, choisissez un autre.</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Le nom d'utilisateur existe déjà, choisissez un autre.</p>
         </div>
     <?php endif ?>
     <article class="choixCompte">
@@ -35,7 +35,4 @@
             </div>
         </div>
     </article>
-    <footer class="footer">
-        
-    </footer>
 </section>

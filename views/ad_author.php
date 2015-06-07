@@ -2,7 +2,7 @@
     <h2>Ajouter un auteur</h2>
     <article class="addBook">
         <?php if (isset ($_GET['error'])): ?>
-            <p class="warning"><span>!</span>ATTENTION: Veuillez compléter tous les champs</p>
+            <p class="warning"><span>!</span>ATTENTION&nbsp;: Veuillez compléter tous les champs</p>
         <?php endif ?>
         <form action="index.php?a=create&e=authors" method="post" enctype="multipart/form-data">
             <label for="name">Nom&nbsp;:</label>

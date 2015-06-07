@@ -37,5 +37,4 @@
             <?php endfor; ?>
         </div>
     </div>
-        
 </section>

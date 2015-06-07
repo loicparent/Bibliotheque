@@ -29,7 +29,4 @@
         </ul>
         <div class="clearing"></div>
     </article >
-    <footer class="footer">
-        
-    </footer>
 </section>

@@ -3,7 +3,6 @@
         <h2>Bienvenue sur la bibliothèque en ligne&nbsp;!</h2>
         <p class="intro">Cherchez, découvrez, re-découvrez le livre qui vous fait envie.</p>
         <p class="intro">Bonne visite&nbsp;!</p>
-
         <div class="recherche">
             <form action="index.php?a=search&e=pages" method="post">
                 <label for="main-search">
@@ -46,12 +45,4 @@
         </div>
         <?php endforeach; ?>
         <div class="clearing"></div>
-    </div>
-
-    <div class="optionSecondaire">
-        
-    </div>
-    <footer class="footer">
-        
-    </footer>
 </section>
